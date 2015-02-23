@@ -2,6 +2,7 @@ package com.dn9x.modbus.util;
 
 import java.net.InetAddress;
 
+import net.wimpi.modbus.Modbus;
 import net.wimpi.modbus.ModbusException;
 import net.wimpi.modbus.ModbusIOException;
 import net.wimpi.modbus.ModbusSlaveException;
@@ -83,10 +84,15 @@ public class ModbusUtil {
 		try {
 			InetAddress addr = InetAddress.getByName(ip);
 			TCPMasterConnection con = new TCPMasterConnection(addr);
+			
+			//Modbus.DEFAULT_PORT;
 			con.setPort(port);
 			con.connect();
-
+			
+			//这里重点说明下，这个地址和数量一定要对应起来
 			ReadInputRegistersRequest req = new ReadInputRegistersRequest(address, 1);
+			
+			//这个SlaveId一定要正确
 			req.setUnitID(slaveId);
 
 			ModbusTCPTransaction trans = new ModbusTCPTransaction(con);
