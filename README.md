@@ -2,7 +2,7 @@
 
 在Modbus Slave中配置如下四个寄存器，
 ![图片](http://images.cnblogs.com/cnblogs_com/Dn9x/562583/o_13.pic_hd.jpg)
-可以根据这个配置：
+可以根据代码中`xml/sensor.xml`这个文件进行配置(注意ip)：
 ```
   <registers>
 		<register>
