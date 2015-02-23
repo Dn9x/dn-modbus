@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<controller id="3">
+	<name>Sensor</name>
+	<mode>SimulateOnly</mode>
+	<ctorName>com.dn9x.modbus.controller.SensorController</ctorName>
+	<ip>192.168.1.103</ip>
+	<port>502</port>
+	<registers>
+		<register>
+			<address>0</address>
+			<defaultValue>123</defaultValue>
+			<type>DI</type>
+		</register>
+		<register>
+			<address>1</address>
+			<defaultValue>12</defaultValue>
+			<type>DO</type>
+		</register>
+		<register>
+			<address>2</address>
+			<defaultValue>53</defaultValue>
+			<type>IR</type>
+		</register>
+		<register>
+			<address>3</address>
+			<defaultValue>63</defaultValue>
+			<type>RE</type>
+		</register>
+	</registers>
+</controller>

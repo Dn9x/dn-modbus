@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<controller id="2">
+	<name>Air-Condition</name>
+	<mode>SimulateOnly</mode>
+	<ctorName>com.dn9x.modbus.controller.AirConditionController</ctorName>
+	<ip>192.168.1.103</ip>
+	<port>502</port>
+	<registers>
+		<register>
+			<address>0</address>
+			<defaultValue>10</defaultValue>
+			<type>RE</type>
+		</register>
+		<register>
+			<address>1</address>
+			<defaultValue>98</defaultValue>
+			<type>IR</type>
+		</register>
+		<register>
+			<address>2</address>
+			<defaultValue>65</defaultValue>
+			<type>DO</type>
+		</register>
+	</registers>
+</controller>

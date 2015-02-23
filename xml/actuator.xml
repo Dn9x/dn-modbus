@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<controller id="1">
+	<name>Actuator</name>
+	<mode id="mode">SimulateOnly</mode>
+	<ctorName>com.dn9x.modbus.controller.ActuatorController</ctorName>
+	<ip>192.168.1.103</ip>
+	<port>502</port>
+	<registers>
+		<register>
+			<address>0</address>
+			<defaultValue>11</defaultValue>
+			<type>DI</type>
+		</register>
+		<register>
+			<address>1</address>
+			<defaultValue>43</defaultValue>
+			<type>DO</type>
+		</register>
+		<register>
+			<address>2</address>
+			<defaultValue>18</defaultValue>
+			<type>RE</type>
+		</register>
+	</registers>
+</controller>
